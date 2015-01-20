@@ -1,7 +1,7 @@
 # Servidor
 from multiprocessing.connection import Listener
 from array import array
-address = ('localhost', 6000)
+address = ('compute-0-1', 6000)
 listener = Listener(address, authkey='secret password')
 conn = listener.accept()
 print 'connection accepted from', listener.last_accepted
